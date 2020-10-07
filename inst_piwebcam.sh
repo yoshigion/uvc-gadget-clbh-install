@@ -7,7 +7,7 @@
 #
 sudo apt update && sudo apt-get install -y git \
 && cd ${HOME} \
-&& git clone https://github.com/climberhunt/uvc-gadget.git \
+&& git clone https://github.com/yoshigion/uvc-gadget-clbh.git \
 && cd uvc-gadget \
 && make
 
@@ -21,13 +21,13 @@ cat << 'EOF' | sudo tee /etc/systemd/system/piwebcam.service
 Description=Start pi webcam service
 
 [Service]
-ExecStart=/home/pi/uvc-gadget/piwebcam
+ExecStart=/home/pi/uvc-gadget-clbh/piwebcam
 StandardOutput=syslog
 StandardError=syslog
 SyslogIdentifier=piwebcam
 User=pi
 Group=pi
-WorkingDirectory=/home/pi/uvc-gadget
+WorkingDirectory=/home/pi/uvc-gadget-clbh
 
 [Install]
 WantedBy=basic.target
