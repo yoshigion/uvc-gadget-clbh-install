@@ -8,7 +8,7 @@
 sudo apt update && sudo apt-get install -y git \
 && cd ${HOME} \
 && git clone -b windev https://github.com/yoshigion/uvc-gadget-clbh.git \
-&& cd uvc-gadget \
+&& cd uvc-gadget-clbh \
 && make
 
 sudo sed -i -e 's/rootwait$/rootwait modules-load=dwc2,libcomposite/' /boot/cmdline.txt
