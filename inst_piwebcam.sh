@@ -7,7 +7,7 @@
 #
 sudo apt update && sudo apt-get install -y git \
 && cd ${HOME} \
-&& git clone https://github.com/yoshigion/uvc-gadget-clbh.git \
+&& git clone -b windev https://github.com/yoshigion/uvc-gadget-clbh.git \
 && cd uvc-gadget \
 && make
 
